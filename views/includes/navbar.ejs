@@ -1,0 +1,75 @@
+<style>
+  .airbnb-search-bar {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 10px 20px; /* ⬅️ increased padding */
+  border-radius: 30px; /* ⬅️ more pill-like */
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* slightly deeper shadow */
+  text-align: center;
+}
+
+.search-item {
+  background: transparent;
+  border: none;
+  font-size: 14px; /* ⬅️ slightly larger text */
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  padding: 10px; /* ⬅️ more vertical space */
+  border-radius: 20px;
+}
+
+.search-item:hover {
+  background-color: #f2f2f2;
+}
+
+.search-icon {
+  background-color: #ff385c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 36px;  /* ⬅️ bigger icon circle */
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+
+</style>
+
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/listings"><i class="fa-brands fa-airbnb"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="/listings">Explore</a>
+      </div>
+      <div class="airbnb-search-bar d-flex align-items-center justify-content-between">
+        <div class="d-flex flex-grow-1 gap-3">
+          <button class="search-item">Anywhere</button>
+          <button class="search-item">Anytime</button>
+          <button class="search-item">Add guests</button>
+        </div>
+        <button class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <div class="navbar-nav ms-auto">
+          <a class="nav-link home" href="/listings/new"><i class="fa-solid fa-house"></i>&nbsp;Airbnb your Home</a>
+          <% if(!currUser) { %>
+          <a class="nav-link"  href="/signup"><b>Signup</b></a>
+          <a class="nav-link" href="/login"><b>Login</b></a>
+          <%}%>
+          <% if(currUser) { %>
+          <a class="nav-link" href="/logout"><b>Logout</b></a>
+          <%}%>
+      </div>
+    </div>
+  </nav>
