@@ -2,7 +2,7 @@
 A full-stack Airbnb-like booking platform built with Node.js, Express, MongoDB, and EJS. It allows users to register, create listings, post reviews, and view property locations on an interactive map.
 
 ## 🌐 Live Demo
-[Click here to view the deployed app](https://your-live-link-here.com)
+[Click here to view the deployed app](https://airbnb-clone-142q.onrender.com)
 
 ## 🚀 Features
 - User registration and secure login (session-based auth)
@@ -33,7 +33,9 @@ Wanderlust/
 
 
 ## 📸 Screenshots
-*Add 2-3 screenshots showing homepage, listing form, map, and review section.*
+<img width="1920" height="954" alt="Screenshot (30)" src="https://github.com/user-attachments/assets/c73013c8-5d46-4a91-aedb-22e134a6aa86" />
+<img width="1920" height="962" alt="Screenshot (31)" src="https://github.com/user-attachments/assets/6a16510a-5837-4fd1-911d-6cdf1647958a" />
+<img width="1920" height="952" alt="Screenshot (32)" src="https://github.com/user-attachments/assets/1f192553-2078-4e6c-94ec-6c6aa695f17f" />
 
 ## 🧠 Learning Highlights
 - Implemented authentication and role-based access
